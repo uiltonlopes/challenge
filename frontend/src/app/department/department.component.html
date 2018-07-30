@@ -1,5 +1,5 @@
 <div class="row">
-  <form  class="col s12" method="post" #frm="ngForm" (ngSubmit)="criar(frm)">
+  <form  class="col s12" method="post" #frm="ngForm" (ngSubmit)="createDepartment(frm)">
     <div class="row">
       <div class="input-field col s8">
         <input type="text" id="name" name="name" class="form-control" placeholder="Nome" [(ngModel)]="department.name" required/>

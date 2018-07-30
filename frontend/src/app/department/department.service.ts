@@ -9,11 +9,11 @@ export class DepartmentService {
 
   constructor(private http: HttpClient) {}
 
-  list() {
+  listDepartment() {
     return this.http.get<Array<any>>(this.departmentsUrl);
   }
 
-  criar(department: any) {
+  createDepartment(department: any) {
     return this.http.post(this.departmentsUrl, department);
   }
 }
