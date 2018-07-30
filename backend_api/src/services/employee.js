@@ -11,7 +11,7 @@ const employee = (server, knex) => {
     server.post('/employee', (req, res, next) => {
 
         knex('employee')
-            .insert(req.body)
+            .insert(req.body).returning('*')
             .then((dados) => {
                 res.send(dados);
             }, next)

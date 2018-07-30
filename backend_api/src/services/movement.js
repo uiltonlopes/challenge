@@ -11,7 +11,7 @@ const movement = (server, knex) => {
     server.post('/movement', (req, res, next) => {
 
         knex('movement')
-            .insert(req.body)
+            .insert(req.body).returning('*')
             .then((dados) => {
                 res.send(dados);
             }, next)

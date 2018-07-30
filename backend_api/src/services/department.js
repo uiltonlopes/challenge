@@ -11,7 +11,7 @@ const department = (server, knex) => {
     server.post('/department', (req, res, next) => {
 
         knex('department')
-            .insert(req.body)
+            .insert(req.body).returning('*')
             .then((dados) => {
                 res.send(dados);
             }, next)
