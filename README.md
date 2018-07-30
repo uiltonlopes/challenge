@@ -18,7 +18,7 @@ Módulo ORM para PostgreSQL: https://github.com/tgriesser/knex, http://knexjs.or
 
 Para testar a aplicação, você deve ter o PostgreSQL instalado, com a estrutura de banco de dados "challenge" já criado.
 
-comandos para iniciar o backend e api
+Navegue ate a pasta challenge/backend_api e use os seguintes comandos para iniciar o backend e api.
 
 ```
 npm install
