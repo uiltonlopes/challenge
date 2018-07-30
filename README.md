@@ -38,3 +38,9 @@ npm run dev
 Para testar a aplicação, você deve ter o @angular/cli instalado
 
 Navegue ate a pasta challenge/frontend e use os seguintes comandos para iniciar o frontend.
+```
+npm install
+```
+```
+ng serve
+```
